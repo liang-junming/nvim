@@ -58,6 +58,11 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'altercation/vim-colors-solarized'
 Plug 'joshdick/onedark.vim'
 Plug 'ajmwagar/vim-deus'
+Plug 'kristijanhusak/vim-hybrid-material'
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
+Plug 'mhinz/vim-startify'
+Plug 'yggdroot/indentline'
 call plug#end()
 
 
@@ -87,3 +92,9 @@ let g:airline_detect_modified = 1
 let g:airline_inactive_collapse = 0
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#show_splits = 1
+
+
+" ===
+" === Identline
+" ===
+let g:indentLine_color_term = 239
