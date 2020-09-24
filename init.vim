@@ -15,9 +15,11 @@
 " === Normal Config
 " ===
 set nu
+set relativenumber
 set laststatus=2
-set scrolloff=20
+set scrolloff=20 " 光标距离页面底端永远留20行位置
 set encoding=utf-8
+set cursorline
 
 
 " ===
@@ -53,7 +55,24 @@ map <s-tab> :-tabnext<CR>
 call plug#begin()
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
+Plug 'altercation/vim-colors-solarized'
+Plug 'joshdick/onedark.vim'
+Plug 'ajmwagar/vim-deus'
 call plug#end()
+
+
+" ===
+" === Theme
+" ===
+syntax enable
+set t_Co=256
+let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
+let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
+let g:deus_termcolors=256
+let g:solarized_termcolors=256
+
+set background=dark
+colorscheme deus
 
 
 " ===
