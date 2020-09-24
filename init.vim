@@ -23,6 +23,24 @@ set cursorline
 
 
 " ===
+" === Tab
+" ===
+set expandtab " tab键转为空格
+set tabstop=2
+set shiftwidth=2
+set smartindent
+
+
+" ===
+" === Search
+" ===
+set incsearch
+set hlsearch
+set ignorecase
+set smartcase
+
+
+" ===
 " === Key Remap
 " ===
 noremap k j
@@ -63,6 +81,7 @@ Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'mhinz/vim-startify'
 Plug 'yggdroot/indentline'
+Plug 'jiangmiao/auto-pairs'
 call plug#end()
 
 
@@ -97,4 +116,4 @@ let g:airline#extensions#tabline#show_splits = 1
 " ===
 " === Identline
 " ===
-let g:indentLine_color_term = 239
+let g:indentLine_color_term = 237
