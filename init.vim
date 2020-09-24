@@ -84,6 +84,7 @@ Plug 'yggdroot/indentline'
 Plug 'jiangmiao/auto-pairs'
 Plug 'mattesgroeger/vim-bookmarks'
 Plug 'mbbill/undotree'
+Plug 'farmergreg/vim-lastplace'
 call plug#end()
 
 
@@ -143,6 +144,6 @@ let g:indentLine_color_term = 237
 " === Undotree
 " ===
 if has("persistent_undo")
-    set undodir=$HOME."/.undodir"
-    set undofile
+  set undodir=$HOME/.undodir
+  set undofile
 endif
