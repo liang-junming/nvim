@@ -53,7 +53,7 @@ noremap t l
 " === Split Screen
 " ===
 map <C-w> <C-w>w
-map Q :q<CR>
+map <C-q> :q<CR>
 map <up> :res +5<CR>
 map <down> :res -5<CR>
 map <left> :vertical resize-5<CR>
@@ -63,9 +63,9 @@ map <right> :vertical resize+5<CR>
 " ===
 " === Tabs page
 " ===
-map l :tabedit<CR>
-map <tab> :+tabnext<CR>
-map <s-tab> :-tabnext<CR>
+nmap <C-t>t :tabedit<CR>
+nmap <C-t>n :+tabnext<CR>
+nmap <C-t>p :-tabnext<CR>
 
 
 " ===
