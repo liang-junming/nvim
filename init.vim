@@ -93,6 +93,7 @@ Plug 'vasconcelloslf/vim-interestingwords'
 Plug 'Shougo/defx.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'kristijanhusak/defx-icons'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'tpope/vim-fugitive'
 " TODO: Plug 'easymotion/vim-easymotion'
 " TODO: haya14busa/incsearch.vim
 " TODO: haya14busa/incsearch-fuzzy.vim
@@ -122,7 +123,7 @@ let g:airline_powerline_fonts = 1
 if !exists('g:airline_symbols')
   let g:airline_symbols = {}
 endif
-let g:airline_theme = 'bubblegum' " violet deus
+let g:airline_theme = 'solarized' " violet deus
 let g:airline_detect_modified = 1
 let g:airline_inactive_collapse = 0
 let g:airline#extensions#tabline#enabled = 1
