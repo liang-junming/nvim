@@ -77,9 +77,8 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'altercation/vim-colors-solarized'
 Plug 'joshdick/onedark.vim'
 Plug 'ajmwagar/vim-deus'
-Plug 'kristijanhusak/vim-hybrid-material'
 Plug 'michaelmalick/vim-colors-bluedrake'
-Plug 'thenewvu/vim-colors-blueprint'
+Plug 'w0ng/vim-hybrid'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'mhinz/vim-startify'
@@ -112,6 +111,7 @@ set termguicolors
 " let g:deus_termcolors=256
 let g:solarized_termcolors=256
 let g:solarized_termtrans = 1
+let g:hybrid_custom_term_colors = 1
 
 set background=dark
 colorscheme solarized
