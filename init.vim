@@ -94,6 +94,7 @@ Plug 'Shougo/defx.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'kristijanhusak/defx-icons'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'tpope/vim-fugitive'
+Plug 'pangloss/vim-javascript'
 " TODO: Plug 'easymotion/vim-easymotion'
 " TODO: haya14busa/incsearch.vim
 " TODO: haya14busa/incsearch-fuzzy.vim
