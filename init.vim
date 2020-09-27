@@ -202,6 +202,7 @@ autocmd FileType defx call s:defx_mappings()
 " === Coc
 " ===
 let g:coc_global_extensions = [
+      \ 'coc-marketplace',
       \ 'coc-json',
       \ 'coc-vimlsp',
       \ 'coc-tsserver'
