@@ -42,17 +42,8 @@ set smartcase
 
 
 " ===
-" === Key Remap
-" ===
-noremap k j
-noremap j k
-noremap t l
-
-
-" ===
 " === Split Screen
 " ===
-map <C-w> <C-w>w
 map <C-q> :q<CR>
 map <up> :res +5<CR>
 map <down> :res -5<CR>
