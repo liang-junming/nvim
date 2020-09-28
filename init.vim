@@ -85,7 +85,8 @@ Plug 'Shougo/defx.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'kristijanhusak/defx-icons'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'tpope/vim-fugitive'
-Plug 'pangloss/vim-javascript'
+Plug 'yuezk/vim-js'
+Plug 'vim-syntastic/syntastic'
 " TODO: Plug 'easymotion/vim-easymotion'
 " TODO: haya14busa/incsearch.vim
 " TODO: haya14busa/incsearch-fuzzy.vim
@@ -407,3 +408,22 @@ let g:rainbow_conf = {
 	\		'css': 0,
 	\	}
 	\}
+
+
+
+" ===
+" === Syntastic
+" ===
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
+" javascript 使用standard代码规范
+let g:syntastic_javascript_checkers = ['standard']
+" 保存文件时自动格式化
+autocmd bufwritepost *.js silent !standard --fix %
+set autoread
