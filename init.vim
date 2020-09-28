@@ -65,7 +65,8 @@ nmap <C-t>p :-tabnext<CR>
 call plug#begin()
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
-Plug 'altercation/vim-colors-solarized'
+" Plug 'altercation/vim-colors-solarized'
+Plug 'lifepillar/vim-solarized8'
 Plug 'joshdick/onedark.vim'
 Plug 'ajmwagar/vim-deus'
 Plug 'michaelmalick/vim-colors-bluedrake'
@@ -100,12 +101,12 @@ syntax enable
 " set t_Co=256
 set termguicolors
 " let g:deus_termcolors=256
-let g:solarized_termcolors=256
+" let g:solarized_termcolors=256
 let g:solarized_termtrans = 1
 let g:hybrid_custom_term_colors = 1
 
 set background=dark
-colorscheme solarized
+colorscheme solarized8_low
 
 
 " ===
