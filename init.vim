@@ -225,7 +225,9 @@ let g:coc_global_extensions = [
       \ 'coc-marketplace',
       \ 'coc-json',
       \ 'coc-vimlsp',
-      \ 'coc-tsserver'
+      \ 'coc-tsserver',
+      \ 'coc-translator',
+      \ 'coc-explorer'
       \ ]
 " TextEdit might fail if hidden is not set.
 set hidden
@@ -380,6 +382,18 @@ nnoremap <silent><nowait> <space>j  :<C-u>CocNext<CR>
 nnoremap <silent><nowait> <space>k  :<C-u>CocPrev<CR>
 " Resume latest coc list.
 nnoremap <silent><nowait> <space>p  :<C-u>CocListResume<CR>
+
+" Mappings for coc-translator
+" popup
+nmap <Leader>tt <Plug>(coc-translator-p)
+vmap <Leader>tt <Plug>(coc-translator-pv)
+" echo
+nmap <Leader>te <Plug>(coc-translator-e)
+vmap <Leader>te <Plug>(coc-translator-ev)
+" replace
+nmap <Leader>tr <Plug>(coc-translator-r)
+vmap <Leader>tr <Plug>(coc-translator-rv)
+
 
 
 " ===
