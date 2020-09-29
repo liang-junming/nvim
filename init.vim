@@ -28,6 +28,8 @@ let mapleader = " "
 " ===
 nmap - $
 vmap - $
+nmap \ %
+vmap \ %
 
 
 " ===
