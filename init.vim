@@ -149,10 +149,10 @@ omap <leader><tab> <plug>(fzf-maps-o)
 imap <c-x><c-k> <plug>(fzf-complete-word)
 imap <c-x><c-f> <plug>(fzf-complete-path)
 imap <c-x><c-l> <plug>(fzf-complete-line)
-nmap <C-g>f :GFiles<CR>
-nmap <C-g>b :Buffers<CR>
-nmap <C-g>l :BLines<CR>
-nmap <C-g>L :Lines<CR>
+nmap sf :GFiles<CR>
+nmap sb :Buffers<CR>
+nmap sl :BLines<CR>
+nmap sL :Lines<CR>
 
 
 " ===
