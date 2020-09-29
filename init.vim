@@ -24,6 +24,13 @@ let mapleader = " "
 
 
 " ===
+" === Key Remap
+" ===
+nmap - $
+vmap - $
+
+
+" ===
 " === Tab
 " ===
 set expandtab " tab键转为空格
