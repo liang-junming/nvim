@@ -443,7 +443,8 @@ set statusline+=%*
 
 let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
-let g:syntastic_check_on_open = 1
+" 打开文件时自动检测会打打降低打开文件的速度
+let g:syntastic_check_on_open = 0
 let g:syntastic_check_on_wq = 0
 " javascript 使用standard代码规范
 let g:syntastic_javascript_checkers = ['standard']
