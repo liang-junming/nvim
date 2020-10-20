@@ -82,6 +82,7 @@ Plug 'joshdick/onedark.vim'
 Plug 'ajmwagar/vim-deus'
 Plug 'michaelmalick/vim-colors-bluedrake'
 Plug 'w0ng/vim-hybrid'
+Plug 'morhetz/gruvbox'
 
 " 彩虹括号
 " Plug 'luochen1990/rainbow'
@@ -150,8 +151,8 @@ syntax enable
 set termguicolors
 " let g:deus_termcolors=256
 " let g:solarized_termcolors=256
-let g:solarized_termtrans = 1
-let g:hybrid_custom_term_colors = 1
+" let g:solarized_termtrans = 1
+" let g:hybrid_custom_term_colors = 1
 
 set background=dark
 colorscheme solarized8
