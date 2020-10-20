@@ -72,36 +72,74 @@ nmap <C-t>p :-tabnext<CR>
 " === Vim Plug
 " ===
 call plug#begin()
+" 底部状态栏及其主题
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
-" Plug 'altercation/vim-colors-solarized'
+
+" 全局主题
 Plug 'lifepillar/vim-solarized8'
 Plug 'joshdick/onedark.vim'
 Plug 'ajmwagar/vim-deus'
 Plug 'michaelmalick/vim-colors-bluedrake'
 Plug 'w0ng/vim-hybrid'
-Plug 'luochen1990/rainbow'
+
+" 彩虹括号
+" Plug 'luochen1990/rainbow'
+
+" 模糊查找工具（很实用）
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
+
+" 启动页面
 Plug 'mhinz/vim-startify'
+
+" 代码对齐线
 Plug 'yggdroot/indentline'
+
+" 自动匹配括号
 Plug 'jiangmiao/auto-pairs'
+
+" 书签
 Plug 'mattesgroeger/vim-bookmarks'
+
+" 撤销功能增强
 Plug 'mbbill/undotree'
+
+" 每次打开文件定位至上一次退出时的位置
 Plug 'farmergreg/vim-lastplace'
+
+" 代码阅读辅助工具，可给多个关键词分别以不同颜色高亮
 Plug 'vasconcelloslf/vim-interestingwords'
+
+" 目录树
 Plug 'Shougo/defx.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'kristijanhusak/defx-icons'
+
+" 超强大的语法分析插件（跳转、补全等），基于lsp，支持多种语言
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
+
+" git客户端
 Plug 'tpope/vim-fugitive'
-Plug 'yuezk/vim-js'
+
+" 语法高亮
+Plug 'pangloss/vim-javascript'
+
+" 语法检查
 Plug 'vim-syntastic/syntastic'
 " TODO: Plug 'easymotion/vim-easymotion'
 " TODO: haya14busa/incsearch.vim
 " TODO: haya14busa/incsearch-fuzzy.vim
 " TODO: haya14busa/incsearch-easymotion.vim
 " TODO: vim-session
+" TODO: floaterm
 call plug#end()
+
+
+" ===
+" === Vim Javascript
+" ===
+let g:javascript_plugin_jsdoc = 1
+let g:javascript_plugin_ngdoc = 1
 
 
 " ===
