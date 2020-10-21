@@ -127,13 +127,36 @@ Plug 'pangloss/vim-javascript'
 
 " 语法检查
 Plug 'vim-syntastic/syntastic'
-" TODO: Plug 'easymotion/vim-easymotion'
+
+" 光标跳转
+Plug 'easymotion/vim-easymotion'
+
+
 " TODO: haya14busa/incsearch.vim
 " TODO: haya14busa/incsearch-fuzzy.vim
 " TODO: haya14busa/incsearch-easymotion.vim
 " TODO: vim-session
 " TODO: floaterm
 call plug#end()
+
+
+" ===
+" === Easymotion
+" ===
+" <Leader>f{char} to move to {char}
+map  <Leader>F <Plug>(easymotion-bd-f)
+nmap <Leader>F <Plug>(easymotion-overwin-f)
+
+" s{char}{char} to move to {char}{char}
+nmap ss <Plug>(easymotion-overwin-f2)
+
+" Move to line
+map <Leader>l <Plug>(easymotion-bd-jk)
+nmap <Leader>l <Plug>(easymotion-overwin-line)
+
+" Move to word
+map  <Leader>w <Plug>(easymotion-bd-w)
+nmap <Leader>w <Plug>(easymotion-overwin-w)
 
 
 " ===
