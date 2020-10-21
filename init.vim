@@ -131,13 +131,30 @@ Plug 'vim-syntastic/syntastic'
 " 光标跳转
 Plug 'easymotion/vim-easymotion'
 
+" 查找
+Plug 'haya14busa/incsearch.vim'
+Plug 'haya14busa/incsearch-fuzzy.vim'
 
-" TODO: haya14busa/incsearch.vim
-" TODO: haya14busa/incsearch-fuzzy.vim
 " TODO: haya14busa/incsearch-easymotion.vim
 " TODO: vim-session
 " TODO: floaterm
 call plug#end()
+
+
+" ===
+" === Incsearch Incsearch-fuzzy
+" ===
+map /  <Plug>(incsearch-forward)
+map ?  <Plug>(incsearch-backward)
+" 输入查找关键字时光标不移动
+map g/ <Plug>(incsearch-stay)
+
+map z/ <Plug>(incsearch-fuzzy-/)
+map z? <Plug>(incsearch-fuzzy-?)
+" 输入查找关键字时光标不移动
+map zg/ <Plug>(incsearch-fuzzy-stay)
+" 取消高亮查找到的关键字
+nnoremap <Esc><Esc> :<C-u>nohlsearch<CR>
 
 
 " ===
