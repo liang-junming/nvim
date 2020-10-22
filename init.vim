@@ -63,9 +63,7 @@ map <right> :vertical resize+5<CR>
 " ===
 " === Tabs page
 " ===
-nmap <C-t>t :tabedit<CR>
-nmap <C-t>n :+tabnext<CR>
-nmap <C-t>p :-tabnext<CR>
+nmap <C-t>T :tabedit<CR>
 
 
 " ===
@@ -135,10 +133,20 @@ Plug 'easymotion/vim-easymotion'
 Plug 'haya14busa/incsearch.vim'
 Plug 'haya14busa/incsearch-fuzzy.vim'
 
-" TODO: haya14busa/incsearch-easymotion.vim
+" 基于浮动窗口的终端
+Plug 'voldikss/vim-floaterm'
 " TODO: vim-session
-" TODO: floaterm
 call plug#end()
+
+
+" ===
+" === Floaterm
+" ===
+let g:floaterm_keymap_new = '<C-t>t'
+let g:floaterm_keymap_prev = '<C-t>p'
+let g:floaterm_keymap_next = '<C-t>n'
+let g:floaterm_keymap_kill = '<C-t>k'
+let g:floaterm_keymap_toggle = '<C-t>u'
 
 
 " ===
