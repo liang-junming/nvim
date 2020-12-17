@@ -17,7 +17,7 @@
 set nu
 set relativenumber
 set laststatus=2
-set scrolloff=20 " 光标距离页面底端永远留20行位置
+set scrolloff=2 " 光标距离页面底端永远留2行位置
 set encoding=utf-8
 set cursorline
 let mapleader = " "
@@ -93,7 +93,7 @@ Plug 'junegunn/fzf.vim'
 Plug 'mhinz/vim-startify'
 
 " 代码对齐线
-Plug 'yggdroot/indentline'
+" Plug 'yggdroot/indentline'
 
 " 自动匹配括号
 Plug 'jiangmiao/auto-pairs'
@@ -213,7 +213,7 @@ let g:airline_powerline_fonts = 1
 if !exists('g:airline_symbols')
   let g:airline_symbols = {}
 endif
-let g:airline_theme = 'cobalt2' " violet deus
+let g:airline_theme = 'base16_solarized' " violet deus
 let g:airline_detect_modified = 1
 let g:airline_inactive_collapse = 0
 let g:airline#extensions#tabline#enabled = 1
@@ -223,7 +223,7 @@ let g:airline#extensions#tabline#show_splits = 1
 " ===
 " === Identline
 " ===
-let g:indentLine_color_term = 237
+" let g:indentLine_color_term = 237
 
 
 " ===
