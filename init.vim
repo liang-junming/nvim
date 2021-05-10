@@ -15,7 +15,7 @@
 " === Normal Config
 " ===
 set nu
-" set relativenumber
+set relativenumber
 set laststatus=2
 set scrolloff=2 " 光标距离页面底端永远留2行位置
 set encoding=utf-8
