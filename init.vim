@@ -20,7 +20,7 @@ set laststatus=2
 set scrolloff=2 " 光标距离页面底端永远留2行位置
 set encoding=utf-8
 set cursorline
-let mapleader = " "
+" let mapleader = " "
 
 
 " ===
@@ -135,6 +135,10 @@ Plug 'haya14busa/incsearch-fuzzy.vim'
 
 " 基于浮动窗口的终端
 Plug 'voldikss/vim-floaterm'
+
+" 快捷键导航
+Plug 'liuchengxu/vim-which-key'
+
 " TODO: vim-session
 call plug#end()
 
@@ -538,3 +542,14 @@ let g:syntastic_javascript_checkers = ['standard']
 " 保存文件时自动格式化
 autocmd bufwritepost *.js silent !standard --fix %
 set autoread
+
+
+
+" ===
+" === Which key
+" ===
+let g:mapleader = "\<Space>"
+let g:maplocalleader = ";"
+nnoremap <silent> <leader> :WhichKey '<Space>'<CR>
+nnoremap <silent> <localleader> :WhichKey ';'<CR>
+
