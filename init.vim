@@ -296,6 +296,8 @@ if has("persistent_undo")
   set undodir=$HOME/.undodir
   set undofile
 endif
+nmap <Leader>uu :UndotreeToggle<CR>
+nmap <Leader>uf :UndotreeFocus<CR>
 
 
 " ===
