@@ -156,11 +156,11 @@ map <Leader>r :Ranger<CR>
 " ===
 " === Floaterm
 " ===
-let g:floaterm_keymap_new = '<C-t>t'
-let g:floaterm_keymap_prev = '<C-t>p'
-let g:floaterm_keymap_next = '<C-t>n'
-let g:floaterm_keymap_kill = '<C-t>k'
-let g:floaterm_keymap_toggle = '<C-t>u'
+let g:floaterm_keymap_new = '<Leader>tt'
+let g:floaterm_keymap_prev = '<Leader>tp'
+let g:floaterm_keymap_next = '<Leader>tn'
+let g:floaterm_keymap_kill = '<Leader>tk'
+let g:floaterm_keymap_toggle = '<Leader>tu'
 
 
 " ===
