@@ -264,17 +264,29 @@ nmap <Leader>fL :Lines<CR>
 " ===
 "           Action	                            Shortcut	     Command
 " Add/remove bookmark at current line	             mm	     :BookmarkToggle
+nmap <Leader>mm <Plug>BookmarkToggle
 " Add/edit/remove annotation at current line	     mi	     :BookmarkAnnotate <TEXT>
+nmap <Leader>mi <Plug>BookmarkAnnotate
 " Jump to next bookmark in buffer	                 mn	     :BookmarkNext
+nmap <Leader>mn <Plug>BookmarkNext
 " Jump to previous bookmark in buffer	             mp	     :BookmarkPrev
+nmap <Leader>mp <Plug>BookmarkPrev
 " Show all bookmarks (toggle)	                     ma	     :BookmarkShowAll
+nmap <Leader>ma <Plug>BookmarkShowAll
 " Clear bookmarks in current buffer only	         mc	     :BookmarkClear
+nmap <Leader>mc <Plug>BookmarkClear
 " Clear bookmarks in all buffers	                 mx	     :BookmarkClearAll
+nmap <Leader>mx <Plug>BookmarkClearAll
 " Move up bookmark at current line	           [count]mkk	 :BookmarkMoveUp [<COUNT>]
+nmap <Leader>mk <Plug>BookmarkMoveUp
 " Move down bookmark at current line	         [count]mjj	 :BookmarkMoveDown [<COUNT>]
+nmap <Leader>mj <plug>BookmarkMoveDown
 " Move bookmark at current line to another line	[count]mg	 :BookmarkMoveToLine <LINE>
+nmap <Leader>mg <Plug>BookmarkMoveToLine
 " Save all bookmarks to a file		                         :BookmarkSave <FILE_PATH>
+nmap <Leader>ms <Plug>BookmarkSave
 " Load bookmarks from a file		                           :BookmarkLoad <FILE_PATH>
+nmap <Leader>ml <Plug>BookmarkLoad
 
 
 " ===
