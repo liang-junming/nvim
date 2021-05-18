@@ -144,17 +144,17 @@ call plug#end()
 " === Ranger
 " ===
 let g:ranger_map_keys = 0
-map <Leader>r :Ranger<CR>
+map <leader>r :Ranger<CR>
 
 
 " ===
 " === Floaterm
 " ===
-let g:floaterm_keymap_new = '<Leader>tt'
-let g:floaterm_keymap_prev = '<Leader>tp'
-let g:floaterm_keymap_next = '<Leader>tn'
-let g:floaterm_keymap_kill = '<Leader>tk'
-let g:floaterm_keymap_toggle = '<Leader>tu'
+let g:floaterm_keymap_new = '<leader>tt'
+let g:floaterm_keymap_prev = '<leader>tp'
+let g:floaterm_keymap_next = '<leader>tn'
+let g:floaterm_keymap_kill = '<leader>tk'
+let g:floaterm_keymap_toggle = '<leader>tu'
 
 
 " ===
@@ -165,10 +165,10 @@ map ?  <Plug>(incsearch-backward)
 " 输入查找关键字时光标不移动
 map g/ <Plug>(incsearch-stay)
 
-map <Leader>fz <Plug>(incsearch-fuzzy-/)
-map <Leader>fZ <Plug>(incsearch-fuzzy-?)
+map <leader>fz <Plug>(incsearch-fuzzy-/)
+map <leader>fZ <Plug>(incsearch-fuzzy-?)
 " 输入查找关键字时光标不移动
-map <Leader>fg <Plug>(incsearch-fuzzy-stay)
+map <leader>fg <Plug>(incsearch-fuzzy-stay)
 " 取消高亮查找到的关键字
 nnoremap <Esc><Esc> :<C-u>nohlsearch<CR>
 
@@ -176,20 +176,20 @@ nnoremap <Esc><Esc> :<C-u>nohlsearch<CR>
 " ===
 " === Easymotion
 " ===
-" <Leader>fc{char} to move to {char}
-map  <Leader>fc <Plug>(easymotion-bd-f)
-nmap <Leader>fc <Plug>(easymotion-overwin-f)
+" <leader>fc{char} to move to {char}
+map  <leader>fc <Plug>(easymotion-bd-f)
+nmap <leader>fc <Plug>(easymotion-overwin-f)
 
-" <Leader>fs{char}{char} to move to {char}{char}
-nmap <Leader>fs <Plug>(easymotion-overwin-f2)
+" <leader>fs{char}{char} to move to {char}{char}
+nmap <leader>fs <Plug>(easymotion-overwin-f2)
 
 " Move to line
-map <Leader>gl <Plug>(easymotion-bd-jk)
-nmap <Leader>gl <Plug>(easymotion-overwin-line)
+map <leader>gl <Plug>(easymotion-bd-jk)
+nmap <leader>gl <Plug>(easymotion-overwin-line)
 
 " Move to word
-map  <Leader>fw <Plug>(easymotion-bd-w)
-nmap <Leader>fw <Plug>(easymotion-overwin-w)
+map  <leader>fw <Plug>(easymotion-bd-w)
+nmap <leader>fw <Plug>(easymotion-overwin-w)
 
 
 " ===
@@ -241,10 +241,10 @@ omap <leader><tab> <plug>(fzf-maps-o)
 imap <c-x><c-k> <plug>(fzf-complete-word)
 imap <c-x><c-f> <plug>(fzf-complete-path)
 imap <c-x><c-l> <plug>(fzf-complete-line)
-nmap <Leader>ff :GFiles<CR>
-nmap <Leader>fb :Buffers<CR>
-nmap <Leader>fl :BLines<CR>
-nmap <Leader>fL :Lines<CR>
+nmap <leader>ff :GFiles<CR>
+nmap <leader>fb :Buffers<CR>
+nmap <leader>fl :BLines<CR>
+nmap <leader>fL :Lines<CR>
 
 
 " ===
@@ -252,29 +252,29 @@ nmap <Leader>fL :Lines<CR>
 " ===
 "           Action	                            Shortcut	     Command
 " Add/remove bookmark at current line	             mm	     :BookmarkToggle
-nmap <Leader>mm <Plug>BookmarkToggle
+nmap <leader>mm <Plug>BookmarkToggle
 " Add/edit/remove annotation at current line	     mi	     :BookmarkAnnotate <TEXT>
-nmap <Leader>mi <Plug>BookmarkAnnotate
+nmap <leader>mi <Plug>BookmarkAnnotate
 " Jump to next bookmark in buffer	                 mn	     :BookmarkNext
-nmap <Leader>mn <Plug>BookmarkNext
+nmap <leader>mn <Plug>BookmarkNext
 " Jump to previous bookmark in buffer	             mp	     :BookmarkPrev
-nmap <Leader>mp <Plug>BookmarkPrev
+nmap <leader>mp <Plug>BookmarkPrev
 " Show all bookmarks (toggle)	                     ma	     :BookmarkShowAll
-nmap <Leader>ma <Plug>BookmarkShowAll
+nmap <leader>ma <Plug>BookmarkShowAll
 " Clear bookmarks in current buffer only	         mc	     :BookmarkClear
-nmap <Leader>mc <Plug>BookmarkClear
+nmap <leader>mc <Plug>BookmarkClear
 " Clear bookmarks in all buffers	                 mx	     :BookmarkClearAll
-nmap <Leader>mx <Plug>BookmarkClearAll
+nmap <leader>mx <Plug>BookmarkClearAll
 " Move up bookmark at current line	           [count]mkk	 :BookmarkMoveUp [<COUNT>]
-nmap <Leader>mk <Plug>BookmarkMoveUp
+nmap <leader>mk <Plug>BookmarkMoveUp
 " Move down bookmark at current line	         [count]mjj	 :BookmarkMoveDown [<COUNT>]
-nmap <Leader>mj <plug>BookmarkMoveDown
+nmap <leader>mj <plug>BookmarkMoveDown
 " Move bookmark at current line to another line	[count]mg	 :BookmarkMoveToLine <LINE>
-nmap <Leader>mg <Plug>BookmarkMoveToLine
+nmap <leader>mg <Plug>BookmarkMoveToLine
 " Save all bookmarks to a file		                         :BookmarkSave <FILE_PATH>
-nmap <Leader>ms <Plug>BookmarkSave
+nmap <leader>ms <Plug>BookmarkSave
 " Load bookmarks from a file		                           :BookmarkLoad <FILE_PATH>
-nmap <Leader>ml <Plug>BookmarkLoad
+nmap <leader>ml <Plug>BookmarkLoad
 
 
 " ===
@@ -284,8 +284,8 @@ if has("persistent_undo")
   set undodir=$HOME/.undodir
   set undofile
 endif
-nmap <Leader>uu :UndotreeToggle<CR>
-nmap <Leader>uf :UndotreeFocus<CR>
+nmap <leader>uu :UndotreeToggle<CR>
+nmap <leader>uf :UndotreeFocus<CR>
 
 
 " ===
@@ -465,14 +465,14 @@ nnoremap <silent><nowait> <space>p  :<C-u>CocListResume<CR>
 
 " Mappings for coc-translator
 " popup
-nmap <Leader>tt <Plug>(coc-translator-p)
-vmap <Leader>tt <Plug>(coc-translator-pv)
+nmap <leader>tt <Plug>(coc-translator-p)
+vmap <leader>tt <Plug>(coc-translator-pv)
 " echo
-nmap <Leader>te <Plug>(coc-translator-e)
-vmap <Leader>te <Plug>(coc-translator-ev)
+nmap <leader>te <Plug>(coc-translator-e)
+vmap <leader>te <Plug>(coc-translator-ev)
 " replace
-nmap <Leader>tr <Plug>(coc-translator-r)
-vmap <Leader>tr <Plug>(coc-translator-rv)
+nmap <leader>tr <Plug>(coc-translator-r)
+vmap <leader>tr <Plug>(coc-translator-rv)
 
 
 
