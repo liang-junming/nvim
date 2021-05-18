@@ -211,7 +211,8 @@ set termguicolors
 " let g:hybrid_custom_term_colors = 1
 
 set background=dark
-colorscheme solarized8
+" colorscheme solarized8
+colorscheme deus
 
 
 " ===
