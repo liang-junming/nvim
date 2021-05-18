@@ -182,20 +182,20 @@ nnoremap <Esc><Esc> :<C-u>nohlsearch<CR>
 " ===
 " === Easymotion
 " ===
-" <Leader>f{char} to move to {char}
-map  <Leader>F <Plug>(easymotion-bd-f)
-nmap <Leader>F <Plug>(easymotion-overwin-f)
+" <Leader>fc{char} to move to {char}
+map  <Leader>fc <Plug>(easymotion-bd-f)
+nmap <Leader>fc <Plug>(easymotion-overwin-f)
 
-" s{char}{char} to move to {char}{char}
-nmap ss <Plug>(easymotion-overwin-f2)
+" <Leader>fs{char}{char} to move to {char}{char}
+nmap <Leader>fs <Plug>(easymotion-overwin-f2)
 
 " Move to line
-map <Leader>l <Plug>(easymotion-bd-jk)
-nmap <Leader>l <Plug>(easymotion-overwin-line)
+map <Leader>gl <Plug>(easymotion-bd-jk)
+nmap <Leader>gl <Plug>(easymotion-overwin-line)
 
 " Move to word
-map  <Leader>w <Plug>(easymotion-bd-w)
-nmap <Leader>w <Plug>(easymotion-overwin-w)
+map  <Leader>fw <Plug>(easymotion-bd-w)
+nmap <Leader>fw <Plug>(easymotion-overwin-w)
 
 
 " ===
