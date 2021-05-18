@@ -20,7 +20,9 @@ set laststatus=2
 set scrolloff=2 " 光标距离页面底端永远留2行位置
 set encoding=utf-8
 set cursorline
-" let mapleader = " "
+let g:mapleader = "\<Space>"
+let g:maplocalleader = ";"
+set timeoutlen=300
 
 
 " ===
@@ -139,8 +141,20 @@ Plug 'voldikss/vim-floaterm'
 " 快捷键导航
 Plug 'liuchengxu/vim-which-key'
 
+" vim中打开ranger
+Plug 'francoiscabrol/ranger.vim'
+" If you use neovim, you have to add the dependency to the plugin bclose.vim
+Plug 'rbgrouleff/bclose.vim'
+
 " TODO: vim-session
 call plug#end()
+
+
+" ===
+" === Ranger
+" ===
+let g:ranger_map_keys = 0
+map <Leader>r :Ranger<CR>
 
 
 " ===
@@ -548,8 +562,6 @@ set autoread
 " ===
 " === Which key
 " ===
-let g:mapleader = "\<Space>"
-let g:maplocalleader = ";"
 nnoremap <silent> <leader> :WhichKey '<Space>'<CR>
 nnoremap <silent> <localleader> :WhichKey ';'<CR>
 
