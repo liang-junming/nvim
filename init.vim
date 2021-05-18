@@ -171,10 +171,10 @@ map ?  <Plug>(incsearch-backward)
 " 输入查找关键字时光标不移动
 map g/ <Plug>(incsearch-stay)
 
-map z/ <Plug>(incsearch-fuzzy-/)
-map z? <Plug>(incsearch-fuzzy-?)
+map <Leader>fz <Plug>(incsearch-fuzzy-/)
+map <Leader>fZ <Plug>(incsearch-fuzzy-?)
 " 输入查找关键字时光标不移动
-map zg/ <Plug>(incsearch-fuzzy-stay)
+map <Leader>fg <Plug>(incsearch-fuzzy-stay)
 " 取消高亮查找到的关键字
 nnoremap <Esc><Esc> :<C-u>nohlsearch<CR>
 
@@ -244,6 +244,7 @@ let g:airline#extensions#tabline#show_splits = 1
 " === Fzf
 " ===
 " Mapping selecting mappings
+" 可查所有按键绑定
 nmap <leader><tab> <plug>(fzf-maps-n)
 xmap <leader><tab> <plug>(fzf-maps-x)
 omap <leader><tab> <plug>(fzf-maps-o)
@@ -252,10 +253,10 @@ omap <leader><tab> <plug>(fzf-maps-o)
 imap <c-x><c-k> <plug>(fzf-complete-word)
 imap <c-x><c-f> <plug>(fzf-complete-path)
 imap <c-x><c-l> <plug>(fzf-complete-line)
-nmap sf :GFiles<CR>
-nmap sb :Buffers<CR>
-nmap sl :BLines<CR>
-nmap sL :Lines<CR>
+nmap <Leader>ff :GFiles<CR>
+nmap <Leader>fb :Buffers<CR>
+nmap <Leader>fl :BLines<CR>
+nmap <Leader>fL :Lines<CR>
 
 
 " ===
@@ -391,8 +392,8 @@ autocmd CursorHold * silent call CocActionAsync('highlight')
 nmap <leader>rn <Plug>(coc-rename)
 
 " Formatting selected code.
-xmap <leader>f  <Plug>(coc-format-selected)
-nmap <leader>f  <Plug>(coc-format-selected)
+" xmap <leader>f  <Plug>(coc-format-selected)
+" nmap <leader>f  <Plug>(coc-format-selected)
 
 augroup mygroup
   autocmd!
