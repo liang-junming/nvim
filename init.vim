@@ -53,9 +53,15 @@ set smartcase
 
 
 " ===
-" === Split Screen
+" === Window operation
 " ===
-map <C-q> :q<CR>
+map <leader>wv :vsplit<CR>
+map <leader>ws :split<CR>
+map <leader>wh <C-w>h
+map <leader>wj <C-w>j
+map <leader>wk <C-w>k
+map <leader>wl <C-w>l
+map <leader>wq :q<CR>
 map <up> :res +5<CR>
 map <down> :res -5<CR>
 map <left> :vertical resize-5<CR>
