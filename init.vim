@@ -53,22 +53,6 @@ set smartcase
 
 
 " ===
-" === Window operation
-" ===
-map <leader>wv :vsplit<CR>
-map <leader>ws :split<CR>
-map <leader>wh <C-w>h
-map <leader>wj <C-w>j
-map <leader>wk <C-w>k
-map <leader>wl <C-w>l
-map <leader>wq :q<CR>
-map <up> :res +5<CR>
-map <down> :res -5<CR>
-map <left> :vertical resize-5<CR>
-map <right> :vertical resize+5<CR>
-
-
-" ===
 " === Tabs page
 " ===
 nmap <C-t>T :tabedit<CR>
@@ -398,7 +382,7 @@ endfunction
 autocmd CursorHold * silent call CocActionAsync('highlight')
 
 " Symbol renaming.
-nmap <leader>crn <Plug>(coc-rename)
+nmap <leader>cr <Plug>(coc-rename)
 
 " Formatting selected code.
 xmap <leader>cs  <Plug>(coc-format-selected)
@@ -506,6 +490,65 @@ set autoread
 " ===
 " === Which key
 " ===
+let g:which_key_map = {}
+let g:which_key_map.f = {
+  \ 'name': "+fzf/incsearch-fuzzy"
+  \}
+
+let g:which_key_map.m = {
+  \ 'name': "+bookmark"
+  \}
+
+let g:which_key_map.u = {
+  \ 'name': "+undotree"
+  \}
+
+let g:which_key_map.g = {
+  \ 'name': "+easymotion"
+  \}
+
+let g:which_key_map.c = {
+  \ 'name': "+coc"
+  \}
+
+let g:which_key_map.l = {
+  \ 'name': "+coclist"
+  \}
+
+let g:which_key_map.t = {
+  \ 'name': "+floaterm/translator"
+  \}
+
+let g:which_key_map.w = {
+      \ 'name' : '+windows' ,
+      \ 's' : ['<C-W>s'     , 'split-window-below']    ,
+      \ 'v' : ['<C-W>v'     , 'split-window-below']    ,
+      \ 'w' : ['<C-W>w'     , 'other-window']          ,
+      \ 'd' : ['<C-W>c'     , 'delete-window']         ,
+      \ 'h' : ['<C-W>h'     , 'window-left']           ,
+      \ 'j' : ['<C-W>j'     , 'window-below']          ,
+      \ 'l' : ['<C-W>l'     , 'window-right']          ,
+      \ 'k' : ['<C-W>k'     , 'window-up']             ,
+      \ 'H' : ['<C-W>5<'    , 'expand-window-left']    ,
+      \ 'J' : [':resize +5' , 'expand-window-below']   ,
+      \ 'L' : ['<C-W>5>'    , 'expand-window-right']   ,
+      \ 'K' : [':resize -5' , 'expand-window-up']      ,
+      \ '=' : ['<C-W>='     , 'balance-window']        ,
+      \ 'f' : ['Windows'    , 'fzf-window']            ,
+      \ }
+
+let g:which_key_map.b = {
+      \ 'name' : '+buffer' ,
+      \ 'd' : ['bd'        , 'delete-buffer']   ,
+      \ 'a' : ['bfirst'    , 'first-buffer']    ,
+      \ 'h' : ['Startify'  , 'home-buffer']     ,
+      \ 'l' : ['blast'     , 'last-buffer']     ,
+      \ 'n' : ['bnext'     , 'next-buffer']     ,
+      \ 'p' : ['bprevious' , 'previous-buffer'] ,
+      \ 'f' : ['Buffers'   , 'fzf-buffer']      ,
+      \ }
+
+call which_key#register('<Space>', "g:which_key_map")
 nnoremap <silent> <leader> :WhichKey '<Space>'<CR>
 nnoremap <silent> <localleader> :WhichKey ';'<CR>
 
