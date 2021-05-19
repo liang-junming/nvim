@@ -177,19 +177,19 @@ nnoremap <Esc><Esc> :<C-u>nohlsearch<CR>
 " === Easymotion
 " ===
 " <leader>fc{char} to move to {char}
-map  <leader>fc <Plug>(easymotion-bd-f)
-nmap <leader>fc <Plug>(easymotion-overwin-f)
+map  <leader>gc <Plug>(easymotion-bd-f)
+nmap <leader>gc <Plug>(easymotion-overwin-f)
 
 " <leader>fs{char}{char} to move to {char}{char}
-nmap <leader>fs <Plug>(easymotion-overwin-f2)
+nmap <leader>gs <Plug>(easymotion-overwin-f2)
 
 " Move to line
 map <leader>gl <Plug>(easymotion-bd-jk)
 nmap <leader>gl <Plug>(easymotion-overwin-line)
 
 " Move to word
-map  <leader>fw <Plug>(easymotion-bd-w)
-nmap <leader>fw <Plug>(easymotion-overwin-w)
+map  <leader>gw <Plug>(easymotion-bd-w)
+nmap <leader>gw <Plug>(easymotion-overwin-w)
 
 
 " ===
@@ -373,12 +373,12 @@ nmap <silent> ]g <Plug>(coc-diagnostic-next)
 
 " GoTo code navigation.
 nmap <silent> gd <Plug>(coc-definition)
-nmap <silent> gy <Plug>(coc-type-definition)
+nmap <silent> gt <Plug>(coc-type-definition)
 nmap <silent> gi <Plug>(coc-implementation)
 nmap <silent> gr <Plug>(coc-references)
 
 " Use K to show documentation in preview window.
-nnoremap <silent> K :call <SID>show_documentation()<CR>
+nnoremap <silent> <leader>ch :call <SID>show_documentation()<CR>
 
 function! s:show_documentation()
   if (index(['vim','help'], &filetype) >= 0)
