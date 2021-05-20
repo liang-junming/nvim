@@ -23,6 +23,7 @@ set cursorline
 let g:mapleader = "\<Space>"
 let g:maplocalleader = ";"
 set timeoutlen=300
+set fdm=indent " 设置以缩进格式自动折叠
 
 
 " ===
@@ -529,28 +530,28 @@ let g:vim_markdown_no_default_key_mappings = 1
 " ===
 let g:which_key_map = {}
 let g:which_key_map.f = {
-  \ 'name': "+fzf/incsearch-fuzzy"
-  \}
+      \ 'name': "+fzf/incsearch-fuzzy"
+      \}
 
 let g:which_key_map.m = {
-  \ 'name': "+bookmark"
-  \}
+      \ 'name': "+bookmark"
+      \}
 
 let g:which_key_map.u = {
-  \ 'name': "+undotree"
-  \}
+      \ 'name': "+undotree"
+      \}
 
 let g:which_key_map.g = {
-  \ 'name': "+easymotion"
-  \}
+      \ 'name': "+easymotion"
+      \}
 
 let g:which_key_map.c = {
-  \ 'name': "+coc"
-  \}
+      \ 'name': "+coc"
+      \}
 
 let g:which_key_map.l = {
-  \ 'name': "+coclist"
-  \}
+      \ 'name': "+coclist"
+      \}
 
 let g:which_key_map.t = {
       \ 'name': "+floaterm/translator"
