@@ -112,6 +112,11 @@ Plug 'nathanaelkane/vim-indent-guides'
 " 语法检查
 Plug 'vim-syntastic/syntastic'
 
+" markdown
+Plug 'godlygeek/tabular'
+Plug 'plasticboy/vim-markdown'
+Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
+
 " 光标跳转
 Plug 'easymotion/vim-easymotion'
 
@@ -322,7 +327,8 @@ let g:coc_global_extensions = [
       \ 'coc-tsserver',
       \ 'coc-translator',
       \ 'coc-explorer',
-      \ 'coc-clangd'
+      \ 'coc-clangd',
+      \ 'coc-markdownlint'
       \ ]
 " TextEdit might fail if hidden is not set.
 set hidden
@@ -512,6 +518,13 @@ set autoread
 
 
 " ===
+" === Markdown
+" ===
+let g:vim_markdown_no_default_key_mappings = 1
+
+
+
+" ===
 " === Which key
 " ===
 let g:which_key_map = {}
@@ -540,8 +553,8 @@ let g:which_key_map.l = {
   \}
 
 let g:which_key_map.t = {
-  \ 'name': "+floaterm/translator"
-  \}
+      \ 'name': "+floaterm/translator"
+      \}
 
 let g:which_key_map.w = {
       \ 'name' : '+windows' ,
@@ -570,6 +583,17 @@ let g:which_key_map.b = {
       \ 'n' : ['bnext'     , 'next-buffer']     ,
       \ 'p' : ['bprevious' , 'previous-buffer'] ,
       \ 'f' : ['Buffers'   , 'fzf-buffer']      ,
+      \ }
+
+let g:which_key_map.d = {
+      \ 'name' : '+markdown',
+      \ 'j' : ['<Plug>Markdown_MoveToNextHeader', 'Markdown-GotoNextHeader'],
+      \ 'k' : ['<Plug>Markdown_MoveToPreviousHeader', 'Markdown-GotoPreviousHeader'],
+      \ 'n' : ['<Plug>Markdown_MoveToNextSiblingHeader', 'Markdown-GotoNextSiblingHeader'],
+      \ 'p' : ['<Plug>Markdown_MoveToPreviousSiblingHeader', 'Markdown-GotoPreviousSiblingHeader'],
+      \ 'h' : ['<Plug>Markdown_MoveToCurHeader', 'Markdown-GotoCurrentHeader'],
+      \ 'u' : ['<Plug>Markdown_MoveToParentHeader', 'Markdown-GotoParentHeader'],
+      \ 'v' : [':MarkdownPreviewToggle', 'Markdown-PreviewToggle'],
       \ }
 
 call which_key#register('<Space>', "g:which_key_map")
