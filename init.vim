@@ -106,6 +106,9 @@ Plug 'tpope/vim-fugitive'
 Plug 'pangloss/vim-javascript'
 Plug 'octol/vim-cpp-enhanced-highlight'
 
+" 缩进线
+Plug 'nathanaelkane/vim-indent-guides'
+
 " 语法检查
 Plug 'vim-syntastic/syntastic'
 
@@ -201,6 +204,12 @@ nmap <leader>gw <Plug>(easymotion-overwin-w)
 " ===
 let g:javascript_plugin_jsdoc = 1
 let g:javascript_plugin_ngdoc = 1
+
+
+" ===
+" === Indent Guides
+" ===
+let g:indent_guides_enable_on_vim_startup = 1
 
 
 " ===
