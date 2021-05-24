@@ -120,7 +120,7 @@ Plug 'vim-syntastic/syntastic'
 " markdown
 Plug 'godlygeek/tabular'
 Plug 'plasticboy/vim-markdown'
-Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
+Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'  }
 
 " 光标跳转
 Plug 'easymotion/vim-easymotion'
