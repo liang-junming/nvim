@@ -525,6 +525,7 @@ set autoread
 " ===
 " === Markdown
 " ===
+let g:vim_markdown_folding_style_pythonic = 1
 let g:vim_markdown_no_default_key_mappings = 1
 autocmd FileType markdown nmap <C-j> <Plug>Markdown_MoveToNextHeader
 autocmd FileType markdown vmap <C-j> <Plug>Markdown_MoveToNextHeader
