@@ -23,7 +23,8 @@ set cursorline
 let g:mapleader = "\<Space>"
 let g:maplocalleader = ";"
 set timeoutlen=300
-set fdm=indent " 设置以缩进格式自动折叠
+set foldmethod=syntax "设置以语法格式自动折叠
+set foldlevel=99
 nmap <C-j> zj
 vmap <C-j> zj
 nmap <C-k> zk
@@ -265,10 +266,7 @@ omap <leader><tab> <plug>(fzf-maps-o)
 imap <c-x><c-k> <plug>(fzf-complete-word)
 imap <c-x><c-f> <plug>(fzf-complete-path)
 imap <c-x><c-l> <plug>(fzf-complete-line)
-nmap <leader>ff :GFiles<CR>
-nmap <leader>fb :Buffers<CR>
-nmap <leader>fl :BLines<CR>
-nmap <leader>fL :Lines<CR>
+
 
 
 " ===
@@ -541,7 +539,17 @@ autocmd FileType markdown vmap [z <Plug>Markdown_MoveToCurHeader
 " ===
 let g:which_key_map = {}
 let g:which_key_map.f = {
-  \ 'name': "+fzf/incsearch-fuzzy"
+  \ 'name': "+fzf/incsearch-fuzzy",
+  \ 'l' : [':Lines', 'Lines in loaded buffers'],
+  \ 'L' : [':BLines', 'Lines in the current buffer'],
+  \ 'f' : [':GFiles', 'Git files'],
+  \ '?' : [':GFiles?', 'git status'],
+  \ 'b' : [':Buffers', 'Open buffers'],
+  \ 'r' : [':Rg', 'rg search resault'],
+  \ 'C' : [':Commits', 'Git commits (requires fugitive.vim)'],
+  \ 'c' : [':BCommits', 'Git commits for the current buffer'],
+  \ '/' : [':History/', 'Search history'],
+  \ ':' : [':History:', 'Command history']
   \}
 
 let g:which_key_map.m = {
