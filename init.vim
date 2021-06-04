@@ -29,6 +29,7 @@ nmap <C-j> zj
 vmap <C-j> zj
 nmap <C-k> zk
 vmap <C-k> zk
+filetype on
 
 
 " ===
@@ -113,6 +114,8 @@ Plug 'tpope/vim-fugitive'
 
 " 语法高亮
 Plug 'pangloss/vim-javascript'
+Plug 'mxw/vim-jsx'
+Plug 'HerringtonDarkholme/yats.vim'
 Plug 'octol/vim-cpp-enhanced-highlight'
 
 " 缩进线
