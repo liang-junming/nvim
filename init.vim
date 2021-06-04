@@ -141,6 +141,9 @@ Plug 'francoiscabrol/ranger.vim'
 " If you use neovim, you have to add the dependency to the plugin bclose.vim
 Plug 'rbgrouleff/bclose.vim'
 
+" vim icon
+Plug 'ryanoasis/vim-devicons'
+
 " TODO: vim-session
 call plug#end()
 
