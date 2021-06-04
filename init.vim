@@ -90,6 +90,9 @@ Plug 'mhinz/vim-startify'
 " 自动匹配括号
 Plug 'jiangmiao/auto-pairs'
 
+" 批量注释
+Plug 'tpope/vim-commentary'
+
 " 书签
 Plug 'mattesgroeger/vim-bookmarks'
 
@@ -146,6 +149,12 @@ Plug 'ryanoasis/vim-devicons'
 
 " TODO: vim-session
 call plug#end()
+
+
+" ===
+" === vim-commentary
+" ===
+map <leader>/ :Commentary<CR>
 
 
 " ===
