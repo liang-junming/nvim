@@ -45,9 +45,10 @@ vmap \ %
 " === Tab
 " ===
 set expandtab " tab键转为空格
-set tabstop=2
-set shiftwidth=2
+set tabstop=4
+set shiftwidth=4
 set smartindent
+autocmd FileType javascript setlocal tabstop=2 shiftwidth=2
 
 
 " ===
