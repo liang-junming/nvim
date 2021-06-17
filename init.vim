@@ -70,6 +70,9 @@ nmap <C-t>T :tabedit<CR>
 " === Vim Plug
 " ===
 call plug#begin()
+" vim中文文档
+Plug 'yianwillis/vimcdoc'
+
 " 底部状态栏及其主题
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
