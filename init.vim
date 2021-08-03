@@ -121,6 +121,7 @@ Plug 'pangloss/vim-javascript'
 Plug 'mxw/vim-jsx'
 Plug 'HerringtonDarkholme/yats.vim'
 Plug 'octol/vim-cpp-enhanced-highlight'
+Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 
 " 缩进线
 Plug 'nathanaelkane/vim-indent-guides'
@@ -176,6 +177,14 @@ let g:cpp_experimental_simple_template_highlight = 1
 let g:cpp_experimental_template_highlight = 1
 let g:cpp_concepts_highlight = 1
 
+let g:go_highlight_types = 1
+let g:go_highlight_fields = 1
+let g:go_highlight_functions = 1
+let g:go_highlight_function_calls = 1
+let g:go_highlight_operators = 1
+let g:go_highlight_extra_types = 1
+let g:go_highlight_build_constraints = 1
+let g:go_highlight_generate_tags = 1
 
 " ===
 " === Ranger
@@ -343,15 +352,16 @@ nnoremap <silent> N :call WordNavigation(0)<cr>
 " === Coc
 " ===
 let g:coc_global_extensions = [
-      \ 'coc-marketplace',
-      \ 'coc-json',
-      \ 'coc-vimlsp',
-      \ 'coc-tsserver',
-      \ 'coc-translator',
-      \ 'coc-explorer',
-      \ 'coc-clangd',
-      \ 'coc-markdownlint'
-      \ ]
+    \ 'coc-marketplace',
+    \ 'coc-json',
+    \ 'coc-vimlsp',
+    \ 'coc-tsserver',
+    \ 'coc-translator',
+    \ 'coc-explorer',
+    \ 'coc-clangd',
+    \ 'coc-markdownlint',
+    \ 'coc-go'
+    \ ]
 " TextEdit might fail if hidden is not set.
 set hidden
 
