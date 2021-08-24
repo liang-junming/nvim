@@ -84,6 +84,10 @@ Plug 'ajmwagar/vim-deus'
 Plug 'michaelmalick/vim-colors-bluedrake'
 Plug 'w0ng/vim-hybrid'
 Plug 'morhetz/gruvbox'
+Plug 'tomasr/molokai'
+Plug 'mhartington/oceanic-next'
+Plug 'arcticicestudio/nord-vim'
+Plug 'liang-junming/vim-sialoquent'
 
 " 模糊查找工具（很实用）
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
@@ -262,9 +266,9 @@ set termguicolors
 " let g:solarized_termtrans = 1
 " let g:hybrid_custom_term_colors = 1
 
-set background=dark
+set background=light
 " colorscheme solarized8
-colorscheme deus
+colorscheme sialoquent
 
 
 " ===
@@ -274,7 +278,7 @@ let g:airline_powerline_fonts = 1
 if !exists('g:airline_symbols')
   let g:airline_symbols = {}
 endif
-let g:airline_theme = 'deus' "violet base16_solarized
+let g:airline_theme = 'base16_ashes' "base16_brushtrees_dark base16_atelier_cave_light violet base16_solarized
 let g:airline_detect_modified = 1
 let g:airline_inactive_collapse = 0
 let g:airline#extensions#tabline#enabled = 1
